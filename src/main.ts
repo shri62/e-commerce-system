@@ -1,11 +1,8 @@
-
-// Import the required classes and functions
 import { Product } from "./models/Product.js";
 import { fetchProducts } from "./services/apiService.js";
 import { calculateDiscount } from "./utils/discountCalculator.js";
 import { calculateTax } from "./utils/taxCalculator.js";
 import { handleError } from "./utils/errorHandler.js";
-
 // Fetch and display products
 async function main(): Promise<void> {
   try {
@@ -51,10 +48,9 @@ async function main(): Promise<void> {
       console.log(`Discount Amount: $${discount.toFixed(2)}`);
       console.log(`Price After Discount: $${discountedPrice.toFixed(2)}`);
       console.log(`Tax Amount: $${tax.toFixed(2)}`);
-      console.log(`Final Price: $${finalPrice.toFixed(2)}`);
+            console.log(`Final Price: $${finalPrice.toFixed(2)}`);
     }
   } catch (error) {
-    // Handle errors if fetching or processing fails
     handleError(error);
   } finally {
     // This message appears whether the operation succeeds or fails

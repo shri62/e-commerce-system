@@ -1,21 +1,18 @@
-
-// Create a custom error class for product-related errors
+// Create a custom error class
 export class ProductError extends Error {
   constructor(message: string) {
     super(message);
-
-    // Set the error name
     this.name = "ProductError";
   }
 }
 
-// Handle errors in one place
+// Handle different types of errors
 export function handleError(error: unknown): void {
-  // Check if the error is a normal Error object
-  if (error instanceof Error) {
+  if (error instanceof ProductError) {
+    console.error("Product Error:", error.message);
+  } else if (error instanceof Error) {
     console.error("Error:", error.message);
   } else {
-    // Handle unexpected errors
     console.error("An unknown error occurred.");
   }
 }
