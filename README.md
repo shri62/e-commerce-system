@@ -68,3 +68,19 @@ The application will retrieve product information from the API, calculate discou
 ## 7. Conclusion
 
 This project will help me practice TypeScript, classes, functions, object-oriented programming, API requests, Promises, async/await, and error handling.
+
+
+
+
+
+## Reflection
+
+In this project, I created an E-commerce Product Management System using TypeScript. I used TypeScript features such as classes, objects, functions, and types. I created a `Product` class to store product information, such as name, price, category, and stock. I used object-oriented programming (OOP) to organize my code and make it easier to understand. I also created separate files for discount calculation, tax calculation, API requests, and error handling.
+
+One challenge I faced was understanding TypeScript syntax and fixing errors in my code. Sometimes, I had problems with curly braces and the `try`, `catch`, and `finally` blocks. I solved these problems by checking my code carefully and correcting the errors step by step. I used the TypeScript compiler to check my code and make sure it worked correctly.
+
+Another challenge was working with data from an API. I used `async` and `await` to get product information from the DummyJSON API. I used Promises to handle asynchronous operations. I also used `try` and `catch` to handle errors when something went wrong. I created a custom error class called `ProductError` and a function called `handleError()` to display error messages.
+
+I also created functions to calculate product discounts and taxes. The program displays product details, discount amounts, tax amounts, and final prices. I tested the application to make sure it worked as expected. I used Git and GitHub to save my work and upload my code.
+
+This project helped me improve my TypeScript, OOP, API, and error-handling skills. I learned how to organize code into separate files and how to find and fix errors. I feel more confident working on TypeScript projects and want to continue learning and improving my coding skills.
